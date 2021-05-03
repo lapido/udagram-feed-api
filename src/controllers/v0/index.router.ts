@@ -9,8 +9,4 @@ router.get('/', async (req: Request, res: Response) => {
     res.send(`V0`);
 });
 
-router.get('/health', async (req: Request, res: Response) => {    
-    res.send(`up`);
-});
-
 export const IndexRouter: Router = router;
