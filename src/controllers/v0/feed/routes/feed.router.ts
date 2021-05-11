@@ -39,6 +39,7 @@ router.get('/', async (req: Request, res: Response) => {
                 item.url = AWS.getGetSignedUrl(item.url);
             }
     });
+    console.log(new Date().toLocaleString() + `: User getting feed items`);
     res.send(items);
 });
 
